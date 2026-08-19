@@ -303,7 +303,7 @@ let ticking = null;
 let locked = false;
 
 const $ = id => document.getElementById(id);
-const fmt = n => '$' + n.toLocaleString('en-US');
+const fmt = n => 'R' + n.toLocaleString('en-US');
 
 function show(id) {
   ['start-screen', 'game-screen', 'end-screen'].forEach(s => $(s).classList.toggle('hidden', s !== id));
